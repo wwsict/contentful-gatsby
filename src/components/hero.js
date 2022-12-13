@@ -10,7 +10,7 @@ const Hero = ({ image, title, content }) => (
       <GatsbyImage className={styles.image} alt={title} image={image} />
     )}
     <div className={styles.details}>
-      <h1 className={styles.title}>{title}</h1>
+      <h1 className={styles.title}>{title} is here!</h1>
       {content && (
         <div className={styles.content}>{renderRichText(content)}</div>
       )}
