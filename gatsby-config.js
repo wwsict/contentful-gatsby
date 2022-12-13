@@ -20,5 +20,31 @@ module.exports = {
         host: process.env.CONTENTFUL_HOST
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `My Smart-Home Guide`,
+        short_name: `SH Guide`,
+        description: `Guide for residents of the ABC123 Smart Home`,
+        start_url: `/`,
+        background_color: `#0a68f0`,
+        theme_color: `#0a68f0`,
+        display: `standalone`,
+        icon: `src/images/icon.png`,
+        icons: [
+          {
+            src: `src/images/icon.png`,
+            sizes: `192x192`,
+            type: `image/png`
+          },
+          {
+            src: `src/images/icon.png`,
+            sizes: `512x512`,
+            type: `image/png`
+          }
+        ]
+      },
+    },
+    `gatsby-plugin-offline`,
   ],
 };
